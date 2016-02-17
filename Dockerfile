@@ -15,6 +15,8 @@ RUN wget http://xdebug.org/files/xdebug-$XDEBUG_VERSION.tgz \
     && tar -zxvf xdebug-$XDEBUG_VERSION.tgz && cd xdebug-$XDEBUG_VERSION \
     && phpize && ./configure --enable-xdebug && make && make install
 
+RUN composer config --global github-protocols
+
 COPY . /export/htdocs/
 COPY ./conf/php.ini /etc/php/
 COPY ./conf/php-fpm.conf /etc/php/
