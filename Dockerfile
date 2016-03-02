@@ -6,7 +6,7 @@ RUN apk --update --no-progress add bash wget curl git build-base php-dev autocon
         php-fpm php-mcrypt php-curl php-dom php-gd php-json php-openssl \
         php-pdo_mysql php-pdo_sqlite php-phar php-iconv php-ctype \
         php-common php-cli php-gd php-pgsql php-bcmath php-imap php-memcache \
-        php-ldap php-soap php-dba php-mcrypt php-xml php-dev \ 
+        php-ldap php-soap php-dba php-mcrypt php-xml php-dev php-mysqli \ 
         php-mysql php-xmlrpc php-enchant php-opcache php-fpm php-pdo \
     && rm -rf /var/cache/apk/* \
     && curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
