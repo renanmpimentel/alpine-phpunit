@@ -23,5 +23,5 @@ COPY ./conf/php-fpm.conf /etc/php/
 
 VOLUME /export/htdocs/
 
-CMD ["/bin/sh"]
-ENTRYPOINT ["/bin/sh", "-c"]
+CMD ["/bin/bash"]
+ENTRYPOINT ["/bin/bash", "-c"]
